@@ -1,0 +1,124 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    font-size: 14px;
+}
+
+.notifications__container {
+    background-color: white;
+    margin: 0 5%;
+    padding: 0 10px;
+}
+
+.notifications__number {
+    display: flex;
+    align-items: center;
+}
+
+.unMark__all {
+    cursor: pointer;
+    font-size: 13px;
+    color: hsl(219, 12%, 42%);
+}
+
+.notification__number {
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-left: 10px ;
+}
+
+.header__conainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 5px;
+}
+
+.bubble__chat {
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 5px;
+    >img {
+        width: 35px;
+        height: 35px;
+        padding-right: 10px;
+    }
+
+    .bubble__text {
+        >p {
+            margin: 0;
+
+            .name {
+                font-weight: bolder;
+            }
+
+            .activity--reacted {
+                font-weight: bold;
+                color: hsl(219, 12%, 42%);
+            }
+
+            .activity--joined {
+                font-weight: bold;
+                color: hsl(219, 85%, 26%);
+            }
+
+        }
+    }
+
+    .red__dot {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 3px 5px;
+        width: 8px;
+        height: 8px;
+        background-color: red;
+        border-radius: 90%;
+    }
+
+    .time {
+        color: hsl(219, 14%, 63%);
+    }
+    .activity--message {
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        border: solid 1px hsl(205, 33%, 90%);
+        padding: 10px;
+        color: hsl(220, 4%, 58%);
+    }
+}
+
+.comment__picture {
+    margin-left: 10px;
+}
+
+.unread {
+    background-color: hsl(210, 60%, 98%);
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: hsl(210, 60%, 98%);
+    }
+    .notifications__container {
+        width: 600px;
+        border-radius: 5px;
+        
+        margin: 0 30%;
+        margin-top: 100px;
+    }
+}
